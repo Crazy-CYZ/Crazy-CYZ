@@ -145,9 +145,9 @@ var rule = {
     //                        搜索配置
     // ════════════════════════════════════════════════════════════
 
-    // 网站搜索被Cloudflare拦截，禁用原生搜索
+    // 网站搜索被Cloudflare拦截，但仍启用搜索（使用本地遍历匹配）
     searchUrl: '',
-    searchable: 0,
+    searchable: 1,
     quickSearch: 0,
     搜索编码: 'utf-8',
 
