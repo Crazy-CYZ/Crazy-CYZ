@@ -1,17 +1,9 @@
 {
-    "sites": [
-        {
-            "key": "xiaoyakankan",
-            "name": "小鸭看看",
-            "type": 4,
-            "api": "https://raw.githubusercontent.com/Crazy-CYZ/Crazy-CYZ/refs/heads/main/xiaoyakankan.php",
-            "searchable": 1,
-            "quickSearch": 1,
-            "filterable": 1,
-            "style": {
-                "type": "rect",
-                "ratio": 1.33
-            }
-        }
-    ]
+  "key": "xiaoyakankan",
+  "name": "小鸭看看",
+  "type": 4,
+  "api": "http://127.0.0.1:9980/xiaoyakankan.php",
+  "searchable": 1,
+  "quickSearch": 1,
+  "changeable": 0
 }
