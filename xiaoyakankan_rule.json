@@ -1,7 +1,7 @@
 {
   "site": {
     "id": "xiaoyakankan_v1",
-    "title": "小鸭看看",
+    "name": "小鸭看看",
     "version": "1.0",
     "nsfw": 0,
     "categories": {
@@ -14,7 +14,6 @@
     "searchUrl": "https://xiaoyakankan.com/search?q={keyword:}&p={page:1:1}",
     "galleryUrl": "https://xiaoyakankan.com/vod/{idCode:}.html"
   },
-
   "rule": {
     "indexRule": {
       "item": {
@@ -47,7 +46,6 @@
         "param": "href"
       }
     },
-
     "searchRule": {
       "item": {
         "selector": ".module-search-item",
@@ -69,23 +67,32 @@
         "fun": "attr",
         "param": "data-original"
       },
-       "datetime": {
+      "datetime": {
         "selector": ".module-item-note",
         "fun": "text"
       },
-       "url": {
+      "url": {
         "selector": ".video-serial",
         "fun": "attr",
         "param": "href"
       }
     },
-
     "galleryRule": {
-      "title": { "selector": "h1", "fun": "text" },
-      "intro": { "selector": ".vod_content", "fun": "text" },
-      "cover": { "selector": ".module-item-pic img", "fun": "attr", "param": "data-original" },
-       "item": {
-        "selector": "#sort-item-1 a", 
+      "title": {
+        "selector": "h1",
+        "fun": "text"
+      },
+      "intro": {
+        "selector": ".vod_content",
+        "fun": "text"
+      },
+      "cover": {
+        "selector": ".module-item-pic img",
+        "fun": "attr",
+        "param": "data-original"
+      },
+      "item": {
+        "selector": "#sort-item-1 a",
         "fun": "html"
       },
       "chapter": {
